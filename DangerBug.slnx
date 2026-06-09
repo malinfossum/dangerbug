@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="DangerBug.Console/DangerBug.Console.csproj" />
+  <Project Path="DangerBug.Core/DangerBug.Core.csproj" />
+  <Project Path="DangerBug.Tests/DangerBug.Tests.csproj" />
+</Solution>
