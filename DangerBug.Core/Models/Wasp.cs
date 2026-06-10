@@ -1,7 +1,18 @@
 namespace DangerBug.Core.Models;
 
-// TODO (par-prog): Wasp — can fly, venomous sting, serious illness/death on allergy (Dangerous).
-// Good place to override Describe() to add an allergy warning (polymorphism).
 public class Wasp : Bug
 {
+    public Wasp() : base("Wasp")
+    {
+        CanFly = true;
+        CanBite = true;
+        Plague = "Venomous sting";
+        GoodStuff = "Pollination";
+        RiskLevel = Risk.Dangerous;
+    }
+
+    public override string Describe()
+    {
+        return base.Describe() + "Can be life-threatening if allergic\n";
+    }
 }

@@ -1,6 +1,11 @@
 namespace DangerBug.Core.Models;
 
-// TODO (par-prog): Housefly — can fly, plague: can spread diseases (Nuisance).
 public class Housefly : Bug
 {
+    public Housefly() : base("Housefly")
+    {
+        CanFly = true;
+        Plague = "Can spread diseases";
+        RiskLevel = Risk.Nuisance;
+    }
 }

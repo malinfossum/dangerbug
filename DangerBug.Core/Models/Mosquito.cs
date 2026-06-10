@@ -1,6 +1,12 @@
 namespace DangerBug.Core.Models;
 
-// TODO (par-prog): Mosquito — can fly, sucks blood, plague: itch (Nuisance).
 public class Mosquito : Bug
 {
+    public Mosquito() : base("Mosquito")
+    {
+        CanFly = true;
+        CanBite = true;
+        Plague = "Itch - sucks blood, can cause disease";
+        RiskLevel = Risk.Nuisance;
+    }
 }
